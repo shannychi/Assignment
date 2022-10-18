@@ -4,99 +4,105 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Flex Box</title>
+  <a href="https://gridhtml.chishanny.repl.co#">
+    <button>Click here to see grid layout</button>
+  </a>
 </head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap');
 
-<body>
-  <header>
-  <nav class="nav-bar" id="nav">
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#contact">Contact Me</a></li>
-    </ul>
-  </nav>
-  </header>
-  <p></p>
-  <section class="img" id="home">
-    <div clas="container-img">
-      <div class="row">
-        <div class="col-ig-12 col-md-12 col-sm-12 col-xs-12 text">
-          <h2 class="title">Hi, it's me Sharon</h2>
-          <p class="pp">I am a Freelancer in Nigeria</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="abt mt-4 pt-4">
-      <h1 class=text-centetr>About Me</h1>
-      <div class="row mt-4">
-        <div class="col">
-          <img src="/Saved Pictures//MEHL0071.JPG" class="aboutimg" alt="">
-        </div>
-        <div class="col-g-8">
-          <p>My name is Edeh sharon. I am a Nigerian, from the the east part of the country(igbo). i live in the federal
-            capital city(Abuja). i am 24years old.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="services">
-    <div>
-      <h1><bold>Services</bold></h1>
-      <ul>
-        <li>Web development</li>
-        <p>i create and maintain websites. i can  also  take responsible for the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the site can handle.</p>
-<li>FrontEnd development</li>
-        <p>i creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app</p>
-      </ul>
-    </div>
-  </section>
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap');
   
-  <section id="project">
-    <h2>Project</h2>
-    <div class="">
-      <ul>
-        <li><a href="https://tourmaline-creponne-cce9ae.netlify.app/"><strong class="bold">signUp page</strong></a></li>
-    </div>
-  </section>
+  @media(min-width:450px){
+  .container{
+    display: flex;
+    color: white;
+      text-align: center;
+    padding: 3rem;
+    width: 450px;
+    height: auto;
+  }
+    
+  }
+  .container div {
+    border: none;
+    padding: 20px;
+    border:1px;
+    box-shadow: 30px;
+  }
+  .first-box{
+    background: hsl(31, 77%, 52%);
+    flex: 1;
+   
+  }
+  .second-box{
+    background: hsl(184, 100%, 22%);
+    flex: 1;
+   
+  }
+  .third-box{
+    background: hsl(179, 100%, 13%);
+    flex: 1;
+  }
+   .pp{
+    width:100px;
+     margin: 0 auto;
+    background-color:hsl(31, 77%, 52%);
+     border: 1px solid hsla(0, 0%, 100%, 0.75);
+     border-radius: 15px;
+     padding: 2px;
+     color: white;
+  }
+  .light-blue{
+     width:100px;
+    margin: 0 auto;
+    background-color:hsl(184, 100%, 22%);
+     border: 1px solid hsla(0, 0%, 100%, 0.75);
+     border-radius: 15px;
+     padding: 2px;
+     color: white;
+  }
 
-  <section id="contact">
-    <div>
-      <h1>Contact Me</h1>
-      <form>
-        <input type="text" class="name" name="name" placeholder="Name" required>
-        
-           <div>
-        <input type="email" class="email" name="email" placeholder="Email" required>
-           </div>
-        <div>
-        <textarea class="form-text" id="comment" name="text" placeholder="message"></textarea>
-        </div>
-      </form>
-      <button type=""submit" class="btn">Submit</button>
+  .dark-blue{
+    width:100px;
+    background-color:hsl(179, 100%, 13%);
+     border: 1px solid hsla(0, 0%, 100%, 0.75);
+     border-radius: 15px;
+     padding: 2px;
+     color: white;
+    margin: 0 auto;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="first-box">
+    <img src="/Flexbox//Copy of icon-sedans.svg">
+    <p></p>
+    <h1>SEDANS</h1>
+    <p>choose a sedan for it's affordability and excellent fuel aconomy. Ideal for cruising in the city or on your next road trip.</p>
+        <p></p>
+         <button class="pp">Learn More</button>
     </div>
-  </section>
 
-  <footer id=footer>
-    <div>
-      <div>
-      <a href="https://twitter.com/ShanelChii" target="_blank"><i class="fa fa-twitter" style="font-size:24px"></i></a>
-      <a href="https://github.com/shannychi" target="_blank"><i class="fab fa-github"></i></a>
+    <div class="second-box">
+      <img src="/Flexbox//Copy of icon-suvs.svg">
+      <p></p>
+      <h1>Suvs</h1>
+      <p>Take van Suv for its spacious interior, powe. and versatility. Perfect for your next family vacation and off-road adventures.</p>
+      <p></p>
+      <button class="light-blue">Learn More</button>
     </div>
-    </div>
-  </footer>
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
 
+    <div class="third-box">
+      <img src="/Flexbox//icon-luxury.svg">
+      <p></p>
+      <h1>LUXURY</h1>
+      <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+      <p></p>
+      <button class="dark-blue">Learn More</button>
+    </div>
+  </div>
 </body>
 
 </html>
