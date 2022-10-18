@@ -4,99 +4,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>login page and registra page</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <header>
-  <nav class="nav-bar" id="nav">
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#contact">Contact Me</a></li>
-    </ul>
-  </nav>
-  </header>
-  <p></p>
-  <section class="img" id="home">
-    <div clas="container-img">
-      <div class="row">
-        <div class="col-ig-12 col-md-12 col-sm-12 col-xs-12 text">
-          <h2 class="title">Hi, it's me Sharon</h2>
-          <p class="pp">I am a Freelancer in Nigeria</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="abt mt-4 pt-4">
-      <h1 class=text-centetr>About Me</h1>
-      <div class="row mt-4">
-        <div class="col">
-          <img src="/Saved Pictures//MEHL0071.JPG" class="aboutimg" alt="">
-        </div>
-        <div class="col-g-8">
-          <p>My name is Edeh sharon. I am a Nigerian, from the the east part of the country(igbo). i live in the federal
-            capital city(Abuja). i am 24years old.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="services">
-    <div>
-      <h1><bold>Services</bold></h1>
-      <ul>
-        <li>Web development</li>
-        <p>i create and maintain websites. i can  also  take responsible for the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the site can handle.</p>
-<li>FrontEnd development</li>
-        <p>i creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app</p>
-      </ul>
-    </div>
-  </section>
-  
-  <section id="project">
-    <h2>Project</h2>
-    <div class="">
-      <ul>
-        <li><a href="https://tourmaline-creponne-cce9ae.netlify.app/"><strong class="bold">signUp page</strong></a></li>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div>
-      <h1>Contact Me</h1>
-      <form>
-        <input type="text" class="name" name="name" placeholder="Name" required>
-        
-           <div>
-        <input type="email" class="email" name="email" placeholder="Email" required>
-           </div>
-        <div>
-        <textarea class="form-text" id="comment" name="text" placeholder="message"></textarea>
-        </div>
+  <div class="login-page">
+    <div class="form">
+      <form class="registra-form">
+        <input type="text" name="name" id="FirstName" placeholder="Firstname" required>
+        <input type="text" name="name" id="lastname" placeholder="LastName" required>
+        <input type="email" name="email" id="mail" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="enter your phone number" required>
+        <input type="password" name="password" id="password" placeholder="password" required>
+        <select name="gender" >
+          <option value="none" selected>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">other</option>
+        </select>
+        <p></p>
+        <input type="date">
+            <label class="favorite">choose your favorite color
+          <input type="color">
+            </label>
+        <a href="https://sucess-page.chishanny.repl.co#">
+        <button>create account</button>
+        </a>
+        <p class="message">Already have an account? <a href="#"><strong>Login here</strong></a></p>
       </form>
-      <button type=""submit" class="btn">Submit</button>
-    </div>
-  </section>
 
-  <footer id=footer>
-    <div>
-      <div>
-      <a href="https://twitter.com/ShanelChii" target="_blank"><i class="fa fa-twitter" style="font-size:24px"></i></a>
-      <a href="https://github.com/shannychi" target="_blank"><i class="fab fa-github"></i></a>
+      <form class="login-form">
+        <input type="email" name="email" placeholder="enter your email" required>
+        <input type="password" name="password" placeholder="enter your password" required>
+        <a href="https://sucess-page.chishanny.repl.co#">
+        <button>Login</button>
+        </a>
+        <p class="message">don't have an account? <a href="#"><strong>SignUp here</strong></a></p>
+      </form>
     </div>
-    </div>
-  </footer>
+  </div>
+
+
+
+
+  <script src=" https://code.jquery.com/jquery-3.6.1.min.js"></script>
+   <script>
+     $('.message a').click(function(){
+       $('form').animate({height: "toggle", opacity: "toggle"}, "slow")
+     });
+   </script>
   <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
   page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
   teal, blue, blurple, magenta, pink!
   -->
-
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
 </body>
 
 </html>
